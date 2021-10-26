@@ -1,0 +1,26 @@
+button {
+  font-size : 20px;
+  width: 25%;
+  height: 50px;
+  cursor: pointer;
+}
+
+button:hover{
+  transition: 0.05s;
+  transform: rotateZ(-1deg);
+  box-shadow: 0 0 30px -10px black;
+}
+
+button:active{
+  transform: translateY(20px);
+  transform: rotateZ(1deg);
+
+}
+
+.canvas {
+  height: 500px;
+}
+
+.title {
+  height: 150px;
+}
