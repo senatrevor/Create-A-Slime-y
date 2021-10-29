@@ -5,13 +5,13 @@ window.onload = function ()
 
 // FACE
 var face = new Image();
-var faceNum = Math.floor( Math.random() * 12 )+1;
+var faceNum = Math.floor( Math.random() * 24 )+1;
 var faceName="images/face" + faceNum + ".png";
 face.src = faceName;
 
 // HEAD
 var head = new Image();
-var headNum = Math.floor( Math.random() * 12 )+1;
+var headNum = Math.floor( Math.random() * 24 )+1;
 var headName="images/head" + headNum + ".png";
 head.src = headName;
 
