@@ -1,166 +1,29 @@
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-body {
+.main-container {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-.canvas {
-  max-width: 80%;
-}
-.title {
-  max-width: 60%;
-}
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-.canvas {
-  max-width: 80%;
-}
-.title {
-  max-width: 60%;
-}
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (max-device-width : 1024px) {
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-.canvas {
-  max-height: 80%;
-}
-.title {
-  max-height: 60%;
-}
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px){
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-.canvas {
-  max-width: 50%;
-}
-.title {
-  max-width: 80%;
-}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-.canvas {
-  max-width: 40%;
-}
-.title {
-  max-width: 60%;
-}
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-.canvas {
-  max-width: 40%;
-}
-.title {
-  max-width: 60%;
-}
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-.canvas {
-  max-width: 80%;
-}
-.title {
-  max-width: 60%;
-}
-}
-
-body {
   text-align: center;
 }
 
-button {
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  border-radius: 40%;
+.title {
+  width: 90%;
+  padding-bottom: 50px;
 }
 
-button:hover{
-  transition: 0.05s;
-  transform: rotateZ(-1deg);
-  box-shadow: 0 0 30px -10px black;
+.canvas {
+  width: 90%;
+  padding-bottom: 50px;
 }
 
-button:active{
-  transform: translateY(20px);
-  transform: rotateZ(1deg);
-
-}
-
-.button-silver {
-  font-family: 'Henny Penny', cursive;
-  font-size: 21px;
-  color: black;
-  text-decoration: none;
+.button {
+  font-family: 'Syne Mono', monospace;
   font-weight: bold;
-  text-shadow: 1px 1px 0 #dedede;
-  box-shadow:
-    2px 2px 0.5em rgba(122, 122, 122, 0.55),
-    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
-    inset -1px -1px 0 rgba(0, 0, 0, 0.34)
-  ;
-  border: 1px solid #dedede;
+  font-size: 2rem;
+  font-stretch: expanded;
+  width: 60%;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  border-radius: 15px;
   background:
     -webkit-gradient(
     -72deg,
@@ -168,7 +31,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -184,7 +47,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -200,7 +63,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -216,7 +79,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -232,7 +95,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -248,7 +111,7 @@ button:active{
     #ffffff 16%,
     #dedede 21%,
     #ffffff 24%,
-    #454545 27%,
+    #808080 27%,
     #dedede 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -257,4 +120,87 @@ button:active{
     #dedede 84%,
     #a1a1a1
   );
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 400px)   {
+  .title {
+    width: 90%;
+    padding-bottom: 25px;
+  }
+
+  .canvas {
+    width: 90%;
+    padding-bottom: 25px;
+  }
+
+  .button {
+    width: 40%;
+    height: 7%;
+  }
+
+}
+
+@media all and (min-width: 700px)   {
+  .title {
+    width: 80%;
+    padding-bottom: 25px;
+  }
+
+  .canvas {
+    width: 60%;
+    padding-bottom: 25px;
+  }
+
+  .button {
+    width: 25%;
+    height: 7%;
+  }
+
+}
+
+@media all and (min-width: 900px)   {
+  .title {
+    width: 60%;
+    padding-bottom: 25px;
+  }
+
+  .canvas {
+    width: 40%;
+    padding-bottom: 25px;
+  }
+
+  .button {
+    font-size: 2.25rem;
+    width: 20%;
+    height: 7%;
+  }
+
+}
+
+@media all and (min-width: 1200px)   {
+  .title {
+    width: 30%;
+    padding-bottom: 25px;
+  }
+
+  .canvas {
+    width: 30%;
+    padding-bottom: 25px;
+  }
+
+  .button {
+    width: 15%;
+    height: 7%;
+  }
+
 }
